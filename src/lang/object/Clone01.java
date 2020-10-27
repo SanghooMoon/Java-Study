@@ -20,14 +20,14 @@ class Point implements Cloneable {
     }
     // clone() 오버라이드(재정의)
     @Override
-    public Object clone() {
+    public Point clone() { // 공변 반환타입 : 실제로 반환되는 자손 객체의 타입으로 반환하여 번거로운 형변환 줄이기
         Object obj = null;
         try {
             obj = super.clone();    // clone() 은 반드시 예외처리 해줘야함
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
-        return obj;
+        return (Point)obj;
     }
 }
 
@@ -35,7 +35,7 @@ public class Clone01 {
 
     public static void main(String[] args) {
         Point origin = new Point(3,5);
-        Point copy = (Point)origin.clone();
+        Point copy = origin.clone();
 
         System.out.println(origin);
         System.out.println(copy);
