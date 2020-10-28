@@ -1,4 +1,4 @@
-package lang.stringBuffer;
+package stringBuffer;
 
 public class StringBuffer02 {
     public static void main(String[] args) {

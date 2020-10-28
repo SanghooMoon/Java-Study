@@ -1,4 +1,4 @@
-package lang.stringBuffer;
+package stringBuffer;
 
 /**
  * StringBuffer vs String
