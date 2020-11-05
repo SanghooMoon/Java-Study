@@ -1,0 +1,12 @@
+ArrayList : 배열기반, 데이터의 추가 및 삭제에는 불리, 순차적인 추가/삭제는 제일빠름, 임의의 요소에 대한 접근성이 뛰어남
+LinkedList : 연결기반, 데이터의 추가와 삭제에 유리, 임의의 요소에 대한 접근성이 좋지않음
+HashMap : 배열과 연결이 결합된 형태. 추가, 삭제, 검색, 접근성이 모두 뛰어남. 검색에는 최고의 성능을 보임
+TreeMap : 연결기반, 정렬과 검색(특히 범위검색)에 적합. 검생성능은 HashMap보다 떨어짐
+Stack : Vector를 상속받아 구현, LIFO 구조
+Queue : LinkedList가 Queue 인터페이스를 구현, FIFO 구조
+Properties : HashTable을 상속받아 구현, 주로 애플리케이션의 환경설정과 관련된 속성을 저장하는데 사용되면 데이터를 파일로부터 읽고 쓰는 편리한 기능을 제공
+HashSet : HashMap을 이용해서 구현
+TreeSet : TreeMap을 이용해서 구현
+
+LinkedHashMap   : HashMap에 저장순서유지기능을 추가
+LinkedHashSet   : HashSet에 저장순서유지기능을 추가
